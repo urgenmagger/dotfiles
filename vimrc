@@ -1,6 +1,7 @@
 syntax enable
 set t_Co=256
 
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
