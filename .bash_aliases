@@ -1,0 +1,11 @@
+alias pjc="cd /home/urgen/Dropbox/for_dev/job4j/job4j_git/JavaCourse && min"
+alias pja="cd ~/devexample/myproject && min"
+alias pja1="cd /home/urgen/devexample/angular/spa && min"
+alias min="PROMPT_DIRTRIM=1"
+alias p1="cd ../.."
+alias p2="cd ../../../"
+alias p3="cd ../../../../"
+alias p4="cd ../../../../../"
+alias insrc="mkdir -p main/java/ru/job4j && mkdir -p test/java/ru/job4j"
+alias form="%!astyle"
+

@@ -1,0 +1,4 @@
+imap jj <Esc>
+
+"for jump cursor in end line
+inoremap <C-e> <C-o>A

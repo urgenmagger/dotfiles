@@ -2,6 +2,7 @@ syntax enable
 set t_Co=256
 
 
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -13,11 +14,27 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'Valloric/YouCompleteMe'
 Plug 'leafgarland/typescript-vim'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'tomtom/tlib_vim'
+"Plug 'garbas/vim-snipmate'
+Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
+"Plug 'ervandew/supertab'
+
+"for ultisnips
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " set a map leader for more key combos
 let g:mapleader = ','
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
-
 
 call plug#end()
 " For phplint Ctrl-l.
@@ -30,12 +47,14 @@ let NERDTreeQuitOnOpen=1
 vmap <F2> "+y 
 inoremap jj <ESC>
 
-" To save, ctrl-s.
-:nmap <c-s> :w<CR>
-:imap <c-s> <Esc>:w<CR>a
 
+"for emmet
 let g:user_emmet_leader_key='<C-Z>'
 
+"for easymotion
+nmap s         <Plug>(easymotion-bd-w)
+vmap s         <Plug>(easymotion-bd-w)
+nmap <Space>s  <Plug>(easymotion-overwin-w)
 
 
 colorscheme gruvbox
@@ -87,3 +106,7 @@ map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
 nnoremap <silent> <bs> <C-w><Left>
+
+"for jupming out brackets in insert mode
+inoremap <C-e> <C-o>A
+
