@@ -101,3 +101,5 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+#my setting color
+PS1="\[\033[1;33;1;32m\]\u@\h:\[\033[1;34m\]\w$ \[\033[0m\]\[\033[0m\]"
