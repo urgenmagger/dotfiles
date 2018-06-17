@@ -2,7 +2,6 @@ syntax enable
 set t_Co=256
 
 
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -19,6 +18,7 @@ Plug 'leafgarland/typescript-vim'
 "Plug 'garbas/vim-snipmate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
+Plug 'scrooloose/nerdcommenter'
 "Plug 'ervandew/supertab'
 
 "for ultisnips
