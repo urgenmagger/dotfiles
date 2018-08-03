@@ -1,4 +1,5 @@
 alias pjc="cd /home/urgen/Dropbox/for_dev/job4j/job4j_git/JavaCourse && min"
+alias pjt="cd /home/urgen/Dropbox/for_dev/job4j/job4j_git/JavaCourse/chapter_002/target && min"
 alias pja="cd ~/devexample/myproject && min"
 alias pja1="cd /home/urgen/devexample/angular/spa && min"
 alias pje="cd /home/urgen/devexample/java_example/ && min"

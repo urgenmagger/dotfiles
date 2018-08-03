@@ -109,4 +109,5 @@ nnoremap <silent> <bs> <C-w><Left>
 
 "for jupming out brackets in insert mode
 inoremap <C-e> <C-o>A
+"formatter for C language
 :command Form %!astyle
