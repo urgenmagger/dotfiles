@@ -12,4 +12,7 @@ alias p4="cd ../../../../"
 alias insrc="mkdir -p main/java/ru/job4j && mkdir -p test/java/ru/job4j"
 alias la="ls -la"
 alias form=":%!astyle"
+alias mysqlst="/etc/init.d/mysql stop"
+alias mysqlsta="/etc/init.d/mysql start"
+alias mysqlre="/etc/init.d/mysql restart"
 
