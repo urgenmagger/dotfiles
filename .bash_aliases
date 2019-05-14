@@ -3,6 +3,7 @@ alias pjt="cd /home/urgen/Dropbox/for_dev/job4j/job4j_git/JavaCourse/chapter_002
 alias pja="cd ~/devexample/myproject && min"
 alias pja1="cd /home/urgen/devexample/angular/spa && min"
 alias pje="cd /home/urgen/devexample/java_example/ && min"
+alias pdt="cd /home/urgen/devexample/forBooks/testjob4j/ && min"
 alias tree3="tree -L 3"
 alias min="PROMPT_DIRTRIM=1"
 alias p1="cd .."

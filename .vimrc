@@ -13,13 +13,19 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'Valloric/YouCompleteMe'
 Plug 'leafgarland/typescript-vim'
+Plug 'terryma/vim-multiple-cursors'
 "Plug 'MarcWeber/vim-addon-mw-utils'
 "Plug 'tomtom/tlib_vim'
 "Plug 'garbas/vim-snipmate'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdcommenter'
 "Plug 'ervandew/supertab'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 "for ultisnips
 " make YCM compatible with UltiSnips (using supertab)
@@ -35,6 +41,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " set a map leader for more key combos
 let g:mapleader = ','
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
+" for nerdcommenter
+" press leader and press cc
 
 call plug#end()
 " For phplint Ctrl-l.
@@ -59,6 +68,8 @@ nmap <Space>s  <Plug>(easymotion-overwin-w)
 
 colorscheme gruvbox
 set background=dark
+set cursorline 
+hi CursorLine term=bold cterm=bold guibg=Grey40 
 
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h14
 
