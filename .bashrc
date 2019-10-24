@@ -121,6 +121,11 @@ PS1="\[\033[1;33;1;32m\]\u@\h:\[\033[1;34m\]\w$ \[\033[0m\]\[\033[0m\]"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#for create symlinks
+if [ -f ~/.foo ]; then
+    . ~/.foo
+fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #vim mode
 set -o vi
