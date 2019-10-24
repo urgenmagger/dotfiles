@@ -1,32 +1,25 @@
-syntax enable
 set t_Co=256
 
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug  'morhetz/gruvbox'
-Plug  'kien/ctrlp.vim'
-Plug  'scrooloose/nerdcommenter'
+Plug 'morhetz/gruvbox'
+Plug 'thaerkh/vim-indentguides'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdcommenter'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
-Plug 'Valloric/YouCompleteMe'
+Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
 Plug 'terryma/vim-multiple-cursors'
-"Plug 'MarcWeber/vim-addon-mw-utils'
-"Plug 'tomtom/tlib_vim'
-"Plug 'garbas/vim-snipmate'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'jiangmiao/auto-pairs'
-Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdcommenter'
-"Plug 'ervandew/supertab'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-
 "for ultisnips
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -44,8 +37,10 @@ let g:mapleader = ','
 
 " for nerdcommenter
 " press leader and press cc
+" press leader and press cu Uncomments the selected line
 
 call plug#end()
+Plug 'nathanaelkane/vim-indent-guides'
 " For phplint Ctrl-l.
 noremap <C-l> :Phplint<CR></CR>
 
@@ -122,3 +117,10 @@ nnoremap <silent> <bs> <C-w><Left>
 inoremap <C-e> <C-o>A
 "formatter for C language
 :command Form %!astyle
+"reload file
+:command Rel source ~/.vimrc"
+
+nnoremap <leader>so :OpenSession
+nnoremap <leader>ss :SaveSession
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
