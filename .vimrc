@@ -103,8 +103,12 @@ set splitright                  " Split vertical windows right to the current
 set splitbelow                  " Split horizontal windows below to the
 
 "change curcor in insert mode
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
+"let &t_SI = "\e[6 q"
+"let &t_EI = "\e[2 q"
+
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
 
 " Map ctrl-movement keys to window switching
 map <C-k> <C-w><Up>
@@ -118,7 +122,6 @@ inoremap <C-e> <C-o>A
 "formatter for C language
 :command Form %!astyle
 "reload file
-:command Rel source ~/.vimrc"
 
 nnoremap <leader>so :OpenSession
 nnoremap <leader>ss :SaveSession
