@@ -8,7 +8,7 @@ Plug 'morhetz/gruvbox'
 Plug 'thaerkh/vim-indentguides'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css'] }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
@@ -16,6 +16,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
