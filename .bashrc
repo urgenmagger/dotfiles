@@ -133,3 +133,14 @@ fi
 #vim mode
 set -o vi
 export EDITOR=vim
+#path for Drush
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+#for vim mode jj
+bind '"jj":vi-movement-mode'

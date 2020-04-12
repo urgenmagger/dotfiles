@@ -11,6 +11,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript', 'css'] }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -128,3 +130,18 @@ nnoremap <leader>so :OpenSession
 nnoremap <leader>ss :SaveSession
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
+
+"jump out of breackets
+inoremap <leader>n <ESC>la
+
+" session management
+let g:session_directory = "~/.vim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+nnoremap <leader>so :OpenSession 
+nnoremap <leader>ss :SaveSession 
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
+"paste F2
+:set pastetoggle=<F2>

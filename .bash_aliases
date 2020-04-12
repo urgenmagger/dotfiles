@@ -16,4 +16,14 @@ alias form=":%!astyle"
 alias mysqlst="/etc/init.d/mysql stop"
 alias mysqlsta="/etc/init.d/mysql start"
 alias mysqlre="/etc/init.d/mysql restart"
+#for drupal
+alias drush="docker-compose exec php drush"
+alias drupal="docker-compose exec php drupal"
+alias composer="docker-compose exec php composer"
+#for ruby project
+alias prp="cd /home/urgen/dev/post/local_post/postdesk && min"
+alias lrp="cd /home/urgen/dev/post/local_p/postdesk && min"
+alias rstart="bundle exec thin start"
+#run openvpn
+alias runopen="cd /home/urgen/dev/network && sudo openvpn --config config_2020-uljyanov.ev_tcp_tap-postdonbass.new.conf"
 
