@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
+Plug 'ngmy/vim-rubocop'
 Plug 'thaerkh/vim-indentguides'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
