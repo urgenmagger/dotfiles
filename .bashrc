@@ -144,3 +144,8 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 #for vim mode jj
 bind '"jj":vi-movement-mode'
+# BEGIN ANSIBLE MANAGED BLOCK
+export PATH=$HOME/.rbenv/bin:$PATH
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+eval "$(rbenv init -)"
+# END ANSIBLE MANAGED BLOCK
