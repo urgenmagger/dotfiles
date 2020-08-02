@@ -23,6 +23,7 @@ alias composer="docker-compose exec php composer"
 #for ruby project
 alias prp="cd /home/urgen/dev/post/local_post/postdesk && min"
 alias lrp="cd /home/urgen/dev/post/local_p/postdesk && min"
+alias prn="cd /home/urgen/dev/local_post && min"
 alias rstart="bundle exec thin start"
 #run openvpn
 alias runopen="cd /home/urgen/dev/network && sudo openvpn --config config_2020-uljyanov.ev_tcp_tap-postdonbass.new.conf"
