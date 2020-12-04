@@ -1,11 +1,14 @@
-set t_Co=256
+ set t_Co=256
 
 
 call plug#begin('~/.vim/plugged')
 
+
+"ruby
+Plug 'vim-ruby/vim-ruby',
+Plug 'tpope/vim-rails',
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
-Plug 'ngmy/vim-rubocop'
 Plug 'thaerkh/vim-indentguides'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -146,3 +149,13 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 "paste F2
 :set pastetoggle=<F2>
+
+
+"for ruby
+map <F7> gg=G<C-o><C-o>
+syntax on
+filetype plugin indent on
+filetype on
+filetype indent on
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
