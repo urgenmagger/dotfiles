@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 "ruby
 Plug 'vim-ruby/vim-ruby',
+Plug 'neoclide/coc.nvim', {'branch': 'release'},
 Plug 'tpope/vim-rails',
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
@@ -159,3 +160,6 @@ filetype on
 filetype indent on
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
+
+"cot tab trigger
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
