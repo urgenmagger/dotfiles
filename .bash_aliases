@@ -27,3 +27,5 @@ alias rstart="bundle exec thin start"
 #run openvpn
 alias runopen="cd /home/urgen/dev/network && path my config" 
 
+alias psand='cd /home/urgen/dev/JS/react/sandbox_react'
+alias r6='cd /home/urgen/dev/ruby/rails/post_6_rails'
