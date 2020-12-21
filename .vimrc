@@ -163,3 +163,8 @@ autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
 "cot tab trigger
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+
+"jupm to directory from current file nerdtree
+"it id working link - https://superuser.com/questions/195022/vim-how-to-synchronize-nerdtree-with-current-opened-tab-file-path
+"working with session
+map <leader>r :NERDTreeFind<cr>
