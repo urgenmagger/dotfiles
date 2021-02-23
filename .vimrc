@@ -169,3 +169,6 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "it id working link - https://superuser.com/questions/195022/vim-how-to-synchronize-nerdtree-with-current-opened-tab-file-path
 "working with session
 map <leader>r :NERDTreeFind<cr>
+
+"
+set wildignore=*/node_modules/*,*/target/*,*/tmp/*
