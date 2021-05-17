@@ -1,11 +1,12 @@
 #softbee
 alias kiosk="cd /home/urgen/dev/work/fml && min"
+alias fmpub="cd /home/urgen/dev/job/fmpublic/frontend && min"
 alias gap="cd /home/urgen/dev/work/gapn/frontend && min"
 alias rna="cd /home/urgen/dev/work/rn/test && min && react-native run-android"
 alias rn="cd /home/urgen/dev/work/rn/test && min && react-native start"
 alias cruisa="cd /home/urgen/dev/work/rn/cruise-frontend-dev && min && react-native run-android"
 alias cruis="cd /home/urgen/dev/work/rn/cruise-frontend-dev && min && react-native start"
-
+alias med="cd /home/urgen/dev/job/rn/eyadamed && min"
 
 
 
@@ -42,5 +43,6 @@ alias runopen="cd /home/urgen/dev/network && path my config"
 alias psand="cd /home/urgen/dev/JS/react/sandbox_react"
 alias r6="cd /home/urgen/dev/ruby/rails/post_6_rails"
 alias r6="cd /home/urgen/dev/ruby/rails/post_6_rails"
+
 
 
