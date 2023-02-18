@@ -26,6 +26,7 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'skamsie/vim-lineletters'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -170,5 +171,10 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "working with session
 map <leader>r :NERDTreeFind<cr>
 
+map <silent>L <Plug>LineLetters
 "
 set wildignore=*/node_modules/*,*/target/*,*/tmp/*
+
+"copy in system buffer
+noremap <Leader>y "*y
+noremap <Leader>P "*p
